@@ -1,0 +1,392 @@
+
+@font-face {
+  font-family: Biko;
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+}
+
+body{
+
+	padding-top: 80px;
+  background: #FBFBFB;  /* fallback for old browsers */
+
+
+
+}
+/* First make sure the video thumbnail images are responsive. */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.videocenter{
+  width: 90%;
+ margin: 0 auto;
+}
+/*
+This is the starting grid for each video with thumbnails 4 across for the largest screen size.
+It's important to use percentages or there may be gaps on the right side of the page.
+*/
+
+.video {
+  background: #fff;
+  padding-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  width: 18%; /* Thumbnails 4 across */
+  margin: 1%;
+  float: left;
+}
+
+ /*
+ These keep the height of each video thumbnail consistent between YouTube and Vimeo.
+ Each can have thumbnail sizes that vary by 1px and are likely break your layout.
+ */
+
+.video figure {
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+
+  .video figure a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
+}
+
+/* Media Queries - This is the responsive grid. */
+
+@media (max-width: 1024px) {
+  .video {
+    width: 31.333%; /* Thumbnails 3 across */
+  }
+}
+
+@media (max-width: 600px) {
+  .video {
+    width: 48%; /* Thumbnails 2 across */
+  }
+}
+
+@media (max-width: 360px) {
+  .video {
+    display: block;
+    width: 96%; /* Single column view. */
+    margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
+    float: none;
+  }
+}
+
+/* These are my preferred rollover styles. */
+
+.video img {
+  width: 100%;
+  opacity: 1;
+}
+
+.video img:hover, .video img:active, .video img:focus {
+  opacity: 0.75;
+}
+
+
+
+.title{
+	color: white;
+	position: absolute;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+.brief{
+	font-style: italic;
+}
+.details{
+	color: #e9967a;
+}
+
+.insta{
+	color: white;
+}
+
+
+
+/*Home*/
+
+
+/*Cards*/
+.card{border: none; background-color: transparent;}
+
+/*Navbar Rules*/
+img.nav-bar-img{
+	margin-right: 10px;
+}
+
+.navbar{
+	background-color: #D8BFD8;
+
+}
+
+a.navbar-brand{
+	font-family:'Montserrat', Sans-Serif;
+	font-size:
+}
+
+/*Floating Nav*/
+.floating-nav{
+	position: fixed;
+	margin-top: 50px;
+	border-left: 1px solid #727272;
+	background-color: white;
+}
+
+	a.float-nav-link{
+		font-family: 'Lato', Sans-Serif;
+		color: black;
+		font-size: 14px;
+		font-weight: 600;
+		text-align: left;
+	}
+
+	.link{
+		position: fixed;
+		top: 300px;
+		left: 85px;
+		font-style: normal;
+		color: white;
+		background-color: #676469;
+		border: none;
+		border-radius: 12px;
+	}
+
+	.link2{
+		position: fixed;
+		top: 370px;
+		left: 100px;
+		font-style: normal;
+		color: white;
+		background-color: #676469;
+		border: none;
+		border-radius: 12px;
+	}
+
+	.link3{
+		position: fixed;
+		top: 480px;
+		left: 90px;
+		font-style: normal;
+		color: white;
+		background-color: #676469;
+		border: none;
+		border-radius: 12px;
+	}
+	.link4{
+		position: fixed;
+		top: 540px;
+		left: 70px;
+		font-style: normal;
+		color: white;
+		background-color: #676469;
+		border: none;
+		border-radius: 12px;
+	}
+
+	.link5{
+		position: fixed;
+		top: 610px;
+		left: 80px;
+		font-style: normal;
+		color: white;
+		background-color: #676469;
+		border: none;
+		border-radius: 12px;
+	}
+
+	.link6{
+		position: fixed;
+		top: 680px;
+		left: 80px;
+		font-style: normal;
+		color: white;
+		background-color: #676469;
+		border: none;
+		border-radius: 12px;
+	}
+
+	.link a{
+			color: white;
+	}
+	.link2 a{
+			color: white;
+	}
+
+	.link3 a{
+			color: white;
+	}
+
+	.link4 a{
+			color: white;
+	}
+
+	.link5 a{
+			color: white;
+	}
+
+	.link6 a{
+			color: white;
+	}
+
+/*Image Rules*/
+img{
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;
+}
+
+/*Font Override Rules*/
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Montserrat', Sans-Serif;
+	margin-bottom: 20px;
+}
+	h1.welcome-special{
+		font-size: 90px;
+	}
+
+	h2.welcome-special-sub{
+		font-family: 'Lato', Sans-Serif;
+		font-size: 30px;
+	}
+
+	h3{
+		text-transform: uppercase;
+		color: #a49727;
+		letter-spacing: -0.5px;
+	}
+
+	h1.contact{
+		font-size: 80px;
+		color: white;
+	}
+
+p, li, span, a {
+	font-family: 'Lato', Sans-Serif;
+	text-align: justify;
+	font-weight: 300;
+}
+
+	p{
+		color: white;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+
+span.img-caption{
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 10px 0px 10px 0px;
+	color: white;
+}
+
+.contact{
+	font-size: 40px;
+}
+
+/*Container/class etc Override Rules*/
+.welcome-message{
+	margin-top: 200px;
+	color: white;
+}
+
+.welcome-special{
+	color: white;
+}
+.welcome-special-sub{
+	font-size: 15px;
+	color: white;
+}
+
+.welcome-button-container{
+	margin-top: 20px;
+}
+
+.welcome-button{
+	background-color: #e9967a;
+	border-radius: 0px 0px 0px 0px;
+	border: 3px solid #e9967a;
+	font-family:'Montserrat', Sans-Serif;
+	font-size: 15px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.welcome-button:hover{
+	background-color: #e9967a;
+	border-color: #e9967a;
+}
+
+.master-heading{
+	padding-top: 50px;
+	padding-left: 50px;
+	color: white;
+
+}
+
+.portfolioheadingimg{
+	width: 100%;
+	height: auto;
+}
+.issueimg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	height: auto;
+}
+
+.testersimg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: auto;
+}
+
+.friendbotimg{
+position: fixed;
+top: 70px;
+left: 50px;
+}
+
+.dottedimg{
+	position: fixed;
+	top: 170px;
+	left: 50px;
+	width: 225px;
+}
+
+ul{
+	color: white;
+}
+
+.wireframe{
+	margin: 0 auto;
+}
+
+
+
+
+
+
+.section-heading{
+	padding-top: 100px;
+}
+
+.slide-show{
+	padding: 30px 0px 50px 0px;
+
+}
