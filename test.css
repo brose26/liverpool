@@ -21,21 +21,23 @@ body {
 .title {
   font-weight: 800;
   color: transparent;
-  font-size: 70px;
+  font-size: 120px;
   background: url("lcc.jpg") repeat;
 
   -webkit-background-clip: text;
   position: relative;
   text-align: center;
-  line-height: 60px;
+  line-height: 120px;
   letter-spacing: -8px;
 }
+
 
 .subtitle{
   display: block;
   text-align: center;
   text-transform: uppercase;
   padding-top:10px;
+  font-size: 20px;
 }
 
 .navbar-default {

@@ -22,6 +22,8 @@ img {
 .videocenter{
   width: 90%;
  margin: 0 auto;
+
+
 }
 /*
 This is the starting grid for each video with thumbnails 4 across for the largest screen size.
@@ -99,7 +101,54 @@ It's important to use percentages or there may be gaps on the right side of the 
 	text-align: center;
 }
 
+.row{
+  border: 1px solid 	#E8E8E8;
+  border-radius: 12px ;
+  background-color: 	#E8E8E8;
+  margin: 0 auto;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.introbox{
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
+.button1 {
+    background-color: #2d3a41;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-items: center;
+    margin:auto;
+  display:block;
+
+
+
+}
+
+.linkstory{
+  color: white;
+}
+
+a:hover{
+  color: white;
+  opacity: 0.75;
+}
+
+
+.imgdescription{
+  text-align: center;
+  color: black;
+}
 
 .brief{
 	font-style: italic;
@@ -126,30 +175,26 @@ img.nav-bar-img{
 }
 
 .navbar{
-	background-color: #D8BFD8;
+	background-color: #2d3a41;
+
 
 }
 
-a.navbar-brand{
+.text-white{
 	font-family:'Montserrat', Sans-Serif;
-	font-size:
+	color: white;
 }
 
+.intro{
+  border: 1px solid 	#E8E8E8;
+  border-radius: 12px ;
+  background-color: 	#E8E8E8;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 /*Floating Nav*/
-.floating-nav{
-	position: fixed;
-	margin-top: 50px;
-	border-left: 1px solid #727272;
-	background-color: white;
-}
 
-	a.float-nav-link{
-		font-family: 'Lato', Sans-Serif;
-		color: black;
-		font-size: 14px;
-		font-weight: 600;
-		text-align: left;
-	}
+
 
 	.link{
 		position: fixed;
